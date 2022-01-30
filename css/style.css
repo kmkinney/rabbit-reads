@@ -7,23 +7,7 @@
     font-family: 'EB Garamond', serif;
 }
 
-:root {
-    /* Dummy theme */
-    /* --dark: #121212; */
-    /* --primary: #FF0000;
-    --secondary: #0000FF;
-    --accent: #00FF00; */
-    /* --light: #D5D5D5; */
-
-    /* Theme 1 */
-    --primary: #6D2E46;
-    --dark: #0B3C49;
-    --secondary: #A26769;
-    --accent: #49A078;
-    --light: #ECE2D0;
-    --light-2: #ece2d0bd;
-}
-
+/*
 body {
     background-color: var(--light);
 }
@@ -36,7 +20,6 @@ body {
 
     display: flex;
     align-items: center;
-    /* position: fixed; */
 }
 
 .nav-content {
@@ -46,7 +29,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
+} */
+
 
 .logo {
     width: 25px;
@@ -77,9 +61,18 @@ body {
 }
 
 .search-icon {
-    margin-left: 60px;
+    /* margin-left: 60px; */
     width: 30px;
 }
+
+.search-btn {
+    background-color: var(--primary);
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .search {
     border: 1px solid #C5C5C5;
     border-radius: 5px;
