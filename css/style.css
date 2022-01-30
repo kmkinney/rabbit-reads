@@ -83,7 +83,35 @@
     text-decoration: underline;
 }
 
-.post-btn {
+/* .post-btn { */
     /* font-size: 0.75em; */
+/* } */
+
+/* Reviews Page */
+.review-box {
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+
+    display: block;
+    overflow: hidden;
+    padding: 1em;
+    box-sizing: content-box;
+}
+
+.review-cover {
+    float: left;
+    width: 15%;
+    margin: 0 1em 1em 0;
+}
+
+.review-title {
+    border-bottom: 1px solid var(--primary);
+    /* float: left; */
+    /* text-decoration: underline; */
+}
+
+.rating {
+    display: block;
+    margin-bottom: 0.75em;
 }
 
