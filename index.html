@@ -16,26 +16,12 @@
 </head>
 
 <body class="bg-light">
-    <!-- Navigation Old-->
-    <!-- <nav class="navbar">
-        <div class="nav-content">
-            <img class="logo" src="/images/book.svg" alt="">
-            <h1 class="title">Picklesimer Publishing</h1>
-            <ul class="links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <img class="search-icon" src="/images/search.svg" alt="">
-            <input class="search" type="search" name="search" id="1" value="Search reviews">
-        </div>
-    </nav> -->
     <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
-        <!-- <div class="container-fluid justify-content-end"> -->
+        <div class="container-fluid nav-container">
             <a class="navbar-brand" href="/">
                 <span class="text-light cursive">Rabbit Reads</span>
-                <!-- <img src="/images/logo.svg" width="30" alt=""> -->
+                <!-- <img class="logo" src="/images/book.svg" width="30" alt=""> -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,54 +36,93 @@
                         <a class="nav-link" href="/pages/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pages/portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="/pages/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pages/reviews.html">Reviews</a>
+                        <a class="nav-link" href="/pages/reviews.html">Book Reviews</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn search-btn" type="submit"><img class="search-icon" src="/images/search.svg" alt=""></button>
+                <form class="form-inline my-lg-0">
+                    <button class="btn search-btn mr-2" type="submit"><img class="search-icon" src="/images/search.svg"
+                            alt=""></button>
+                    <input class="bg-light text-primary form-control w-75" type="search" placeholder="Search"
+                        aria-label="Search">
                 </form>
             </div>
-        <!-- </div> -->
+        </div>
     </nav>
 
-
-
-    <div class="page">
+    <!-- Home Page content -->
+    <div class="page-container container-fluid bg-light text-primary">
         <div class="row">
-            <h1 class="heading">Gretchen's Blog Site!</h1>
-            <h1 class="reviews">Check out my book reviews!</h1>
-        </div>
-        <div class="row">
-            <img class="portrait" src="/images/gretchen.jpg" alt="">
-            <div class="accent-1">
-                <img class="book" src="/images/book-dark.svg" alt="">
-                <div class="review">
-                    <p>
-                        "This book is really quite amazing! I loved everything the author was trying to do..."
-                    </p>
-                </div>
-                <img class="book" src="/images/book-dark.svg" alt="">
-                <div class="review">
-                    <p>
-                        "This book is really quite amazing! I loved everything the author was trying to do..."
-                    </p>
+            <!-- Title -->
+            <div class="col-12 mt-2 mt-lg-4 mb-lg-2">
+                <h2 class="">Welcome to Rabbit Reads!</h2>
+            </div>
+            <!-- Picture -->
+            <div class="col-md-4 col-12 m-md-0 p-md-0 mb-3 order-md-1">
+                <img class="img-fluid" src="/images/gretchen.jpg" alt="">
+            </div>
+            <!-- Banner -->
+            <div class="col-12 bg-primary text-light text-center order-md-4 mt-lg-4">
+                <div class="banner-title">Top 5 Winter Reads 2022</div>
+                <div class="banner-item"><i class="bi bi-caret-left-fill text-muted"></i>1. Howl's Moving Castle<i
+                        class="bi bi-caret-right-fill text-muted"></i></div>
+            </div>
+
+            <div class="col-md-8 col-12 order-md-2 pl-lg-3 p-0 m-0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Book Reviews -->
+                        <div class="col-12 text-light bg-secondary order-md-1">
+                            <div class="banner-title">Featured Book Reviews</div>
+                        </div>
+                        <!-- Review 1 -->
+                        <div class="col-md-2 col-4 mt-3 text-primary bg-light order-md-3">
+                            <img class="img-fluid" src="/images/book-dark.svg" alt="">
+                        </div>
+                        <div class="col-md-10 col-8 mt-3 align-self-center order-md-4">
+                            <h5>Book Title</h5>
+                            <p>
+                                "This book is really quite amazing! I loved everything the author was trying to do..."
+                            </p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="col-md-2 col-4 mt-3 text-primary bg-light order-md-5">
+                            <img class="img-fluid" src="/images/book-dark.svg" alt="">
+                        </div>
+                        <div class="col-md-10 col-8 mt-3 align-self-center order-md-6">
+                            <h5>Book Title</h5>
+                            <p>
+                                "This book is really quite amazing! I loved everything the author was trying to do..."
+                            </p>
+                        </div>
+                        <!-- Link to more reviews -->
+                        <div class="col-12 bg-primary text-center m-md-0 mt-3 order-md-2">
+                            <a class="review-btn btn text-light w-100" href="/pages/reviews.html">See More Reviews<i
+                                    class="bi bi-arrow-right ml-3"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-12 bg-light text-center order-md-5 my-2 my-lg-4">
+                <a class="blog-btn btn text-primary w-100" href="/pages/blog.html">Check out my blog!<i class="bi bi-arrow-right ml-3"></i></a>
+            </div>
+
         </div>
-        <div class="accent-2">
-            <span class="banner">Top 5 Winter Reads 2022</span>
-            <span class="topic">
-                <span class="arrow">
-                    <</span> 1. Howl's Moving Castle <span class="arrow">></span>
-                </span>
-        </div>
+
+
+        
     </div>
-    <footer class="footer">
-        <span>Gretchen Picklesimer Publishers</span>
+    <!-- Footer -->
+    <footer class="row bg-secondary text-light text-center pt-2 pb-4">
+        <div class="col-12 my-lg-3">
+            <span class="footer-content">Gretchen Picklesimer and Rabbit Reads Publishers</span>
+        </div>
+        <div class="col-12 my-lg-3">
+            <a class="gh-link" href="https://github.com/kmkinney/rabbit-reads"><i
+                    class="bi bi-github mr-2"></i>github repository</a>
+        </div>
     </footer>
 
     <!-- Scripts -->
